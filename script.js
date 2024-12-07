@@ -1,12 +1,20 @@
 const hamburgerMen = document.querySelector('#mobile-screen');
 const submitQuestionsButton = document.querySelector(".submit__questions-button");
 const menuLinks = document.querySelector('.navbar__menu');
-const nextBtn = document.querySelector('#next-btn')
-const prevBtn = document.querySelector('#prev-btn')
-const imageSlide = document.querySelectorAll(".slides")
-const ansWers = document.querySelectorAll('.ans')
+const nextBtn = document.querySelector('#next-btn');
+const prevBtn = document.querySelector('#prev-btn');
+const imageSlide = document.querySelectorAll(".slides");
+const ansWers = document.querySelectorAll('.ans');
+const imageTag = document.querySelector('.image__container');
+const textTag = document.querySelector('.text__content-container');
+const btn1 = document.querySelector('#btn1');
+const btn2 = document.querySelector('#btn2');
+const btn3 = document.querySelector('#btn3');
+const btn4 = document.querySelector('#btn4');
+const videoTag = document.querySelector('.video__totorials');
 
 let i = 0;
+
 
 
 submitQuestionsButton.addEventListener ('click',()=>{
@@ -19,22 +27,19 @@ submitQuestionsButton.addEventListener ('click',()=>{
         answer.classList.add ('hidden')
     });
 
-    if (totalScore>= 0 && totalScore < 4){
-        ansWers[0].classList.remove ('hidden');
-    }
     if (totalScore>= 4 && totalScore < 8){
+        ansWers[0].classList.remove ('hidden');
+    } else if (totalScore>= 8 && totalScore <11 ){
         ansWers[1].classList.remove ('hidden');
-    }
-    if (totalScore>= 8 && totalScore < 12){
+    } else if (totalScore>= 11 && totalScore < 13){
         ansWers[2].classList.remove ('hidden');
-    }
-    if (totalScore>= 12 && totalScore < 16){
+    } else {
         ansWers[3].classList.remove ('hidden');
     }
 });
 
 
-    
+
 const mobileMenu = () =>{
     hamburgerMen.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
@@ -67,3 +72,23 @@ prevBtn.addEventListener('click', () => {
 });
 
 viewImage(i);
+
+btn1.addEventListener ('click', ()=>{
+    textTag.classList.toggle('hidden');
+    imageTag.classList.toggle('hidden');
+    videoTag.classList.add('hidden')
+})
+
+btn2.addEventListener ('click', ()=>{
+    videoTag.classList.toggle('hidden');
+    textTag.classList.add('hidden');
+    imageTag.classList.add('hidden');
+})
+
+btn3.addEventListener ('click', ()=>{
+    accordian.classList.toggle('hidden');
+})
+
+btn4.addEventListener ('click', ()=>{
+    videoTag.classList.toggle('hidden');
+})
