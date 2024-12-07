@@ -21,7 +21,7 @@
                 <a href="./index.html" class="navbar__links" id="home-page">Home</a>
             </li>
             <li class="navbar__item">
-                <a href="/aboutpage.html" class="navbar__links" id="about-page">About</a>
+                <a href="./aboutpage.html" class="navbar__links" id="about-page">About</a>
             </li>
             <li class="navbar__item">
                 <a href="./productpage.html" class="navbar__links" id="servies-page">Products</a>
@@ -32,7 +32,175 @@
         </ul>
     </div>
  </nav>
+ <!--This is a section for photocarusell and cards -->
+<section>
+    <div class="flex-container" >
+        <!-- slideshow -->
+        <div class="slideshow-container">
+            <span class="navigation-button">
+                <button id="prev-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></button>
+                <button id="next-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></Button>
+        </span>
+        <div class="slides">
+            <img class="picture__container"  src="./src/assets/DALL·E 2024-12-06 12.47.24 - A collection of makeup items including lipstick, blush, eyeshadow palette, and makeup brushes arranged aesthetically. The colors are vibrant and varie.webp">
+            <div class="caption-container">
+                <p class="caption"> Her står det noe</p>
+            </div>
+        </div>
+        <div class="slides">
+            <img class="picture__container"  src="./src/assets/DALL·E 2024-12-06 12.48.11 - A different collection of makeup items, including mascara, foundation, lip gloss, and compact powder arranged aesthetically. The colors are varied wit.webp">
+            <div class="caption-container">
+                <p class="caption"> Her står det noe</p>
+            </div>
+        </div>
+        <div class="slides">
+            <img class="picture__container"  src="./src/assets/DALL·E 2024-12-06 12.48.13 - A third collection of makeup items including eyeliner, concealer, highlighter, and nail polish arranged aesthetically. The colors are varied with shad.webp">
+            <div class="caption-container"><p class="caption"> Her står det noe</p>
+            </div>
+        </div>
+</div>
+<div class="container">
+    <div class="accordion" id="hidden">
+        <div class="accordion__title-container">
+            <h3 class="accordion-title">This is just a title</h3>
+            <button class="accordion__toogle-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrowLogo"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></button>
+        </div>
+        <div class="accordion__description-container">
+            <p class="accordion-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quo harum placeat voluptatem ex, animi unde repudiandae dolore veritatis vel cumque repellat ipsam quibusdam error magnam autem fugit corrupti doloremque.</p>
+        </div>
+    </div>
+    <div class="accordion" id="hidden">
+        <div class="accordion__title-container">
+            <h3 class="accordion-title">This is just a title</h3>
+            <button class="accordion__toogle-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrowLogo"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></button>
+        </div>
+        <div class="accordion__description-container">
+            <p class="accordion-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quo harum placeat voluptatem ex, animi unde repudiandae dolore veritatis vel cumque repellat ipsam quibusdam error magnam autem fugit corrupti doloremque.</p>
+        </div>
+    </div>
+    <div class="accordion" id="hidden">
+        <div class="accordion__title-container">
+            <h3 class="accordion-title">This is just a title</h3>
+            <button class="accordion__toogle-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrowLogo"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></button>
+        </div>
+        <div class="accordion__description-container">
+            <p class="accordion-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quo harum placeat voluptatem ex, animi unde repudiandae dolore veritatis vel cumque repellat ipsam quibusdam error magnam autem fugit corrupti doloremque.</p>
+        </div>
+    </div>
+</div>
 
+</section>
+<!-- the section ends and this is where the girid starts. Two sections -->
+<div class="grid__container">
+    <div class="gird-item item1">
+        <!-- skintypequiz this is in norwgian for now, but can be change to englis if I got the time -->
+    <form class="quiz__form">
+        <div class=""> 
+            <h1>Check your skintype here</h1>
+        </div>
+          <div class="skintype__quiz" required>
+                <!-- spørsmål1 -->
+                <div class="question__container"><h2>Question 1</h2>
+                <h3>Hvordan føles huden din etter at du har vasket den med vann og rens?</h3>
+                
+
+                <p><input type="radio" name="question1" value="1">Stram og tørr</p>
+                <p><input type="radio" name="question1" value="2">Litt tørr, men komfortabel </p>
+                <p><input type="radio" name="question1" value="3">Helt normal, verken tørr eller fet</p>
+                <p><input type="radio" name="question1" value="4">Oljete og skinnende</p></div>
+                <!-- spørsmål2 -->
+                <div class="question__container"><h2>Question 2</h2>
+                <h3>Hvordan reagerer huden din i løpet av en typisk dag uten fuktighetskrem?</h3>
+                
+                <p><input type="radio" name="question2" value="1">Veldig tørr, flassende eller ubehagelig</p> 
+                <p><input type="radio" name="question2" value="2">Tørr i enkelte områder, men grei andre steder</p>
+                <p><input type="radio" name="question2" value="3">Normal, ingen ubehagelige endringer</p>
+                <p><input type="radio" name="question2" value="4">Oljete og skinnende</div></p>
+
+                <div class="question__container"><h2>Question 3</h2>
+                <h3>Hvordan oppfører huden seg når den er i kontakt med nye hudpleieprodukter?</h3>
+                
+                <p><input type="radio" name="question3" value="1">Blir ofte rød, irritert eller føles sår</p> 
+                <p><input type="radio" name="question3" value="2">Følsom først, men stabiliserer seg med tid</p>
+                <p><input type="radio" name="question3" value="3">Sjeldent noen reaksjon, aksepterer de fleste produkter </p>
+                <p><input type="radio" name="question3" value="4">Ingen reaksjon, håndterer alt uten problem</div></p>
+
+                <div class="question__container"><h2>Question 4</h2>
+                <h3>Hvordan oppfører huden din seg i varme og fuktige omgivelser, for eksempel om sommeren?</h3>
+                
+                <p><input type="radio" name="question4" value="1">Fortsetter å være tørr, trenger fuktighet hele tiden</p> 
+                <p><input type="radio" name="question4" value="2">Litt mindre tørr, men fortsatt noen tørre områder</p>
+                <p><input type="radio" name="question4" value="3">Ganske normal, kanskje litt glans i t-sonen</p>
+                <p><input type="radio" name="question4" value="4">Blir merkbart fet og skinnende</div></p>
+           <button type="button" class="submit__questions-button">Sumbit Answere</button>
+            </div>
+              <!-- this is where tha answer from the skintype quiz is displayed -->
+        </br>
+            <div class="ans hidden" id="ans1"><h2>Hudtype: Tørr Hud</h2><p><strong>Anbefaling:</strong></strongAnbefaling:> Huden din er sannsynligvis tørr. Det er viktig å bruke fuktighetsgivende produkter med ingredienser som hyaluronsyre og ceramider for å hjelpe med å opprettholde fuktigheten. Unngå sterke rensemidler og produkter som kan strippe huden for oljer.</p></div>
+            <div class="ans hidden" id="ans2"><h2>Hudtype: Sensitiv eller Kombinert Hud</h2><p><strong>Anbefaling:</strong>Huden din kan være sensitiv eller kombinert. Bruk produkter uten sterke dufter eller irriterende ingredienser. Prøv en mild, parfymefri fuktighetskrem, og husk solkrem for beskyttelse.</p></div>
+            <div class="ans hidden" id="ans3"><h2>Hudtype: Normal Hud</h2><p><strong>Anbefaling: Huden din er trolig normal. Den virker balansert, verken for tørr eller for fet. Fortsett med en god rutine som inkluderer rensing, fuktighet og solbeskyttelse. Bruk produkter som opprettholder fuktighetsbalansen.</strong></p></div>
+            <div class="ans hidden" id="ans4"><h2>Hudtype: Fet Hud</h2><p><strong>Anbefaling:</strong>Huden din er sannsynligvis fet. Velg lette, oljefrie fuktighetskremer og bruk en mild rens som kan fjerne overflødig olje uten å irritere huden. Se etter produkter med salisylsyre eller niacinamide for å kontrollere oljeproduksjonen og holde huden klar.</p></div>
+        </form>
+    </div>
+    <!-- grid-item2 -->
+    <div class="gird-item">
+        <!-- This is tags for grid item two! -->
+        <div class="nav__tags">
+            <ul class="navbar__tag-list">
+                <li class="navbar__tag-items">
+                    <button class="tag-btn" id="btn1">Tips</button>
+                </li>
+                <li class="navbar__tag-items">
+                    <button class="tag-btn" id="btn2">Makup Tutorial</button>
+                </li>
+              
+            </ul>
+        </div>
+        <!-- fist button tag (tips) displayes this -->
+        <div class="image__container hidden">
+            <img src="./src/assets/8ac3dd9a-94e7-4ebf-8eab-7454d1315fb5.webp" class="tag__item">
+        </div>
+        <div class="text__content-container hidden">
+            <h1>Find Your Perfect Makeup Match</h1>
+            <p>Discover the power of makeup that complements your unique beauty. Whether you prefer a bold, dramatic look or a soft, natural finish, we have the tips and tools to help you shine. Explore our wide range of products and learn how to bring out the best in your features.
+            </p>
+        </br>
+            <h1>Skincare Meets Style</h1>
+            <p>Beautiful makeup starts with healthy skin. From hydrating moisturizers to gentle cleansers, learn how to create the perfect base for your makeup. Combine flawless skin with your favorite shades to express your personal style.
+            </p>
+        </br>
+            <h1>Color Coordination Made Simple</h1>
+            <p>Not sure which makeup shades match your outfit or mood? Our guide helps you pair bold lipsticks with elegant attire, natural tones with casual wear, and the perfect eyeshadow for every occasion. Let your makeup and wardrobe work in harmony.
+            </p>
+        </br>
+            <h1>Elevate Your Beauty Routine</h1>
+            <p>Step up your beauty game with expert tips on application techniques, seasonal trends, and product recommendations. Whether you’re experimenting with new looks or perfecting your signature style, we’ve got you covered.
+            </p>
+        </br>
+        </div>
+        <!-- 2th tag (Makuptitorial) displayse this -->
+        <div class="video__totorials hidden"> 
+            <div class="video-text">
+                <h2>I simple makeup look</h2>
+                <p>It is sholdn't be diffecoult to feel pritty</p>
+            </div>
+            <div class="video-item1">
+                <video width="800px" controls class="video1">
+                <source src="./src/assets/Effortless Everyday Makeup Tutorial!-VEED.mp4">
+                </video>
+            </div>
+            <div class="video-text">
+                <h2>A good routine</h2>
+                <p>A good routine makes wonders!</p>
+            </div>
+           <div class="video-item2">
+            <video width="800px"  controls class="video2">
+                <source src="./src/assets/Perfect Your Skincare Routine for Every Skin Type!-VEED.mp4">
+            </video>
+        </div>
+    </div>
+</div>
+<!-- Javascript conected to this page -->
  <script src="./script.js" defer></script>
 </body>
 </html>
