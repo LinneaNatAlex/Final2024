@@ -22,7 +22,6 @@
 .navbar__container{
     display: flex;
     justify-content: space-between;
-    
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -215,10 +214,11 @@
 
 .useage h1{
     background-size: 100%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:fantasy;
     color: #ffffff;
     margin-bottom: 10%;
     font-size: 60px;
+    
 }
 
 .use__wrapper{
@@ -237,7 +237,7 @@
     border:none;
     color: #ffffff;
     text-transform: uppercase;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: fantasy;
     margin-top: 16px;
 }
 
@@ -345,36 +345,79 @@
    scale: 2;
    border: none;
 }
+/* Navigation tags for the gridcontainer */
+.nav__tags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #6f0000;
+}
+
+.navbar__tag-list{
+    display:flex;
+    align-items: center;
+    width:60%;
+    justify-content:space-between;
+    
+}
+
+.tag-btn{
+ background: #ee0979;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ padding: 20px 40px 20px 40px;
+ border-radius: 10px;
+ border: 2px solid #870000 ;
+ background-size: 100%;
+ -webkit-text-fill-color: transparent;
+ -moz-text-fill-color:transparent;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ text-transform: uppercase;
+ box-shadow: 1px 1px 30px #870000;
+ font-family:fantasy;
+ 
+}
+
+
+.tag-btn:hover{
+    background-color: #DA4453;
+}
+
+
+
 /* grid__container */
 .grid__container{
     display: grid;
     background-color: #000000;
     grid-template-columns: 1fr 1fr;
+    padding: 20px;
 }
+
 
 
 form{
-    display: flex;
+    display: grid;
     align-items: center;
-    flex-direction: column;
-    background-color: #320404;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
-    margin: 10px;
-    
+    justify-items: center;
+    border-right:2px solid #870000;
+}
+
+form h1{
+    padding:  20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 10%;
+    margin-right: 20%;
+    font-family: fantasy;
 }
 form h2{
     padding:  20px;
-    background: #ee0979;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 100%;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    color: white;
     text-transform: uppercase;
-   
     
 }
 form h3{
@@ -395,12 +438,85 @@ form h3{
     align-items: center;
     justify-content: space-evenly;
     color: white;
+    margin: 10px;
+
     padding-left: 20%;
-    padding-right: 20%;
+    padding-right: 30%;
+}
+
+.submit__questions-button{
+    margin: 50px;
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    border: 2px solid #870000 ;
+    background-size: 100%;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 30px #870000;
+    font-family:fantasy;
+}
+
+.ans{
+    color: white;
+    padding: 20%;
+}
+
+.tag__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* griditem 2 with tags */
+.image__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width:100%;
+}
+
+.image__container img{
+
+    width: 70%;
+    height:auto;
+}
+
+.text__content-container {
+    color: white;
+    padding:20%; 
+    padding-top:10%;
+    
+}
+.video-text{
+    color: white;
+}
+.video__totorials{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10%;
+    height: 100%;
     
 }
 
+.video-item1, .video-item2{
+    margin:5%;
+    border: 2px solid red;
+}
 
+.accordian p{
+    color: white;
+}
+
+
+/* hidden display none, makes it possible to hide content */
 .hidden{
     display: none;
 }
