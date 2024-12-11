@@ -2,8 +2,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;
-    scroll-behavior: smooth;   
+    font-family:'Times New Roman', Times, serif;  
 }
 
 body{
@@ -433,7 +432,6 @@ form h3{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid red;
     width: 79%;
     color: white;
     padding: 10%;
@@ -567,7 +565,7 @@ form h3{
     border-radius: 10px;
 }
 
-#contactForm{
+.contact__form{
     margin-bottom: 10px;
     padding: 2%;
     padding-left: 5%;
@@ -579,9 +577,9 @@ form h3{
     background-color: black;
 }
 
-.textarea{
-    background-color: black;
-}
+
+
+
 /* ---------------hidden------------- */
 /* hidden display none, makes it possible to hide content */
 .hidden{
@@ -610,6 +608,7 @@ form h3{
         grid-template-columns: auto;
         left: 60%;
         width:40%;
+        height: 30rem;
         position: absolute;
         text-transform: uppercase;
         opacity: 1;

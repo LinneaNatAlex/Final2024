@@ -1,12 +1,12 @@
 const singleForm = document.querySelector('.single-input');
 const emailInput = document.querySelector ('#e-mail');
 const contactInformation = document.querySelector ('.contact_information-form');
-const firstName = document.querySelector ('.first__name');
-const companyName = document.querySelector ('.company__name');
-const emailAdress = document.querySelector ('.email__adress');
-const phoneNumber = document.querySelector ('.phone__number');
-const birthDate = document.querySelector ('.date__birth');
-const textBox= document.querySelector ('.text__box');
+const firstName = document.querySelector ('#firstname');
+const companyName = document.querySelector ('#companyName');
+const emailAdress = document.querySelector ('#emailText');
+const phoneNumber = document.querySelector ('#phone');
+const birthDate = document.querySelector ('#date');
+const textBox = document.querySelector ('#textarea');
 const submitions = []
 const Connect = []
 
@@ -44,4 +44,6 @@ contactInformation.addEventListener('submit', (e) => {
     birthDate.value ='';
     textBox.value ='';
 });
+
+
 
