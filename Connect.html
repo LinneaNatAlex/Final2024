@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>FinalAssigment</title>
+</head>
+<body>
+<!-- This is the Navbar! -->
+ <nav class="navbar">
+    <div class="navbar__container">
+        <a href="#home" id="navbar__logo">BLOODYMARRY MAKEUP</a>
+        <div class="navbar__toggle" id="mobile-screen">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="./index.html" class="navbar__links" id="home-page">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="./aboutpage.html" class="navbar__links" id="about-page">About</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="./Connect.html" class="button" id="connect">Connect</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="#facebook" class="social" id="facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            </li>
+            <li class="navbar__btn">
+                <a href="#instagram" class="social" id="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            </li>
+        </ul>
+    </div>
+ </nav>
+<section>
+    <div class="grid__container">
+       <form class="single-input">
+            <input type="email" id="e-mail" name="email" placeholder="f.eks johan@gmail.com" >
+            <button class="submit">Submit</button>
+       </form>
+    
+        <div class="email__input-text">
+        <h2>Get updated</h2>
+       </br>
+        <p>Stay in the loop with everything happening at Bloody Marry Makeup! By providing your email address, you'll gain exclusive access to our latest news, updates, and special offers tailored just for you. Whether it’s exciting promotions, expert beauty tips, or sneak peeks at upcoming services and events, we promise to keep you inspired.
+
+            We understand how valuable your time and inbox space are, which is why we’re committed to sending only meaningful and relevant content. Signing up ensures you’re always the first to know about our exclusive deals and creative makeup insights.
+            
+            Your privacy is important to us, and you can unsubscribe at any time if you choose to. Let’s stay connected and make magic together!"
+            
+            This version adds more warmth and personalization, while also addressing the user's potential concerns about privacy and inbox clutter. Let me know what you think!</p>
+        </div>
+        <div class="item1">
+            <form class="contact_information-form"><h1>Get in Contact</h3>
+            
+            <label for="Name">Name <input type="text" name="neme" id="contactForm" class="first__name"></label>
+            <label for="text">C-Name <input type="text" name="neme" id="contactForm" class="company__name"></label>
+            <label for="email">E-mail<input type="email" name="email" id="contactForm" class="email__adress"></label>
+            <label for="phonenumber">Phone<input type="tel" name="neme" id="contactForm" class="phone__number"></label>
+            <label for="date">Date<input type="date" name="neme" id="contactForm" class="date__birth"></label>
+            
+            <label for="text">What can we help you with?</label> 
+            <textarea id="contactForm" class="text__box" rows="10" cols="30"></textarea>
+            <button class="submit">Submit</button>  
+        </form>
+            
+        </div>
+        <div class="item2">
+            <h3><Form></Form></h3>
+        </div>
+    </div>
+</section>
+ <script src="./connect.js" defer></script>
+</body>
+</html>

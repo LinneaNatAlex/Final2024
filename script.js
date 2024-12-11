@@ -12,24 +12,12 @@ const btn2 = document.querySelector('#btn2');
 const btn3 = document.querySelector('#btn3');
 const btn4 = document.querySelector('#btn4');
 const videoTag = document.querySelector('.video__totorials');
-const accordian = document.querySelector('.accordian-tab');
-const titleCont = document.querySelectorAll('.accordion__title-container');
-const accordDisc = document.querySelectorAll('.accordion__description-container');
-const accorToggleLogo = document.querySelectorAll('.arrowLogo');
 let i = 0;
 
-titleCont.forEach((title, index)=>{
-    title.addEventListener('click',()=>{
-      accordDisc.forEach(decription => {
-        accordDisc[index].classList.toggle('accordion__description-container--active');
-      });
-      accorToggleLogo[index].classList.toggle('rotate-arrow');
-    });
-});
 
 submitQuestionsButton.addEventListener ('click',()=>{
     let totalScore = 0;
-    document.querySelectorAll(".placement__quiz input[type='radio']:checked")
+    document.querySelectorAll(".skintype__quiz input[type='radio']:checked")
     .forEach(answer => {totalScore += +answer.value;
     });
     
@@ -56,6 +44,7 @@ const mobileMenu = () =>{
 }
 
 hamburgerMen.addEventListener('click', mobileMenu);
+
 
 function viewImage (index) {
     imageSlide.forEach((img, i) => {
