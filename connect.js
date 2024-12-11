@@ -1,3 +1,5 @@
+const menuLinks = document.querySelector('.navbar__menu');
+const hamburgerMen = document.querySelector('#mobile-screen');
 const singleForm = document.querySelector('.single-input');
 const emailInput = document.querySelector ('#e-mail');
 const contactInformation = document.querySelector ('.contact_information-form');
@@ -7,6 +9,7 @@ const emailAdress = document.querySelector ('#emailText');
 const phoneNumber = document.querySelector ('#phone');
 const birthDate = document.querySelector ('#date');
 const textBox = document.querySelector ('#textarea');
+
 const submitions = []
 const Connect = []
 
@@ -44,6 +47,13 @@ contactInformation.addEventListener('submit', (e) => {
     birthDate.value ='';
     textBox.value ='';
 });
+
+const mobileMenu = () =>{
+    hamburgerMen.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+}
+
+hamburgerMen.addEventListener('click', mobileMenu);
 
 
 

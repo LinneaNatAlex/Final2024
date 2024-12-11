@@ -43,6 +43,8 @@ NB! The text content about the product details. The 'text' content was Partly ge
 # Inspiration
 [https://codepen.io/designcouch/pen/ExvwPY] (Partly hamburger menu animation)
 [ChatGpt] (Content and content guidience)
+[https://kristiania.instructure.com/courses/12270/external_tools/264] (Navbar, accordian, JS)
+
 
 # Contact 
 [linnea.n.a.s.hetty@outlook.com]
