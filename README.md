@@ -48,3 +48,7 @@ This content has been generated partley by [ChatGpt](https://chatgpt.com/)
 
 # Contact 
 [linnea.n.a.s.hetty@outlook.com]
+
+# Link
+Netlify (https://final2024.netlify.app)
+Github (git@github.com:LinneaNatAlex/Final2024.git)
