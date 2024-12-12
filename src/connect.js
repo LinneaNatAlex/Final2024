@@ -35,18 +35,22 @@ contactInformation.addEventListener('submit', (e) => {
         ComName: companyName.value,
         Email: emailAdress.value,
         Dob: birthDate.value,
-        Boxtext:textBox.value,
+        Boxtext: textBox.value,
     };
    
     Connect.push(register);
-    console.log(Connect);
-     
-    firstName.value ='';
-    companyName.value ='';
-    emailAdress.value ='';
-    birthDate.value ='';
-    textBox.value ='';
+
+    localStorage.setItem('firstname', firstName.value);
+    localStorage.setItem('companyname', companyName.value);
+    localStorage.setItem('email', emailAdress.value);
+    localStorage.setItem('DOB', birthDate.value);
+    localStorage.setItem('textbox', textBox.value);
+    
 });
+
+console.log(localStorage);
+
+
 
 const mobileMenu = () =>{
     hamburgerMen.classList.toggle('is-active');
@@ -54,6 +58,3 @@ const mobileMenu = () =>{
 }
 
 hamburgerMen.addEventListener('click', mobileMenu);
-
-
-
