@@ -2,13 +2,16 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;  
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
 }
+
 
 body{
     background-color: #101010;
 }
-/* ---------------top navbar styles------------- */
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -100,9 +103,7 @@ body{
     color: #DA4453;
     transition: 0.5s ease;
 }
-
-
-/* ---------------Card and usage section style------------- */
+/* -----------------------CARDS---------------- */
 .useage{
     display: flex;
     padding: 10%;
@@ -157,7 +158,7 @@ body{
     color: white;
     padding: 3%;
     justify-content: center;
-    background-image: url(src/assets/Cards.webp);
+    background-image: url(/src/assets/Cards.webp);
     transition: 0;
     width: 240px;
     border-radius: 4%;
@@ -167,6 +168,7 @@ body{
 .use__card:hover{
     transform: scale(1.3);
 }
+
 
 /* ---------------slideshow section style------------- */
 .flex-container{

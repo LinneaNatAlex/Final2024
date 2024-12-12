@@ -1,3 +1,5 @@
+const menuLinks = document.querySelector('.navbar__menu');
+const hamburgerMen = document.querySelector('#mobile-screen');
 const singleForm = document.querySelector('.single-input');
 const emailInput = document.querySelector ('#e-mail');
 const contactInformation = document.querySelector ('.contact_information-form');
@@ -7,6 +9,7 @@ const emailAdress = document.querySelector ('#emailText');
 const phoneNumber = document.querySelector ('#phone');
 const birthDate = document.querySelector ('#date');
 const textBox = document.querySelector ('#textarea');
+
 const submitions = []
 const Connect = []
 
@@ -32,18 +35,26 @@ contactInformation.addEventListener('submit', (e) => {
         ComName: companyName.value,
         Email: emailAdress.value,
         Dob: birthDate.value,
-        Boxtext:textBox.value,
+        Boxtext: textBox.value,
     };
    
     Connect.push(register);
-    console.log(Connect);
-     
-    firstName.value ='';
-    companyName.value ='';
-    emailAdress.value ='';
-    birthDate.value ='';
-    textBox.value ='';
+
+    localStorage.setItem('firstname', firstName.value);
+    localStorage.setItem('companyname', companyName.value);
+    localStorage.setItem('email', emailAdress.value);
+    localStorage.setItem('DOB', birthDate.value);
+    localStorage.setItem('textbox', textBox.value);
+    
 });
 
+console.log(localStorage);
 
 
+
+const mobileMenu = () =>{
+    hamburgerMen.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+}
+
+hamburgerMen.addEventListener('click', mobileMenu);

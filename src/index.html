@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./cards.css">
+    <link rel="stylesheet" href="./quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>FinalAssigment</title>
 </head>
 <body>
 <!-- This is the Navbar! -->
  <nav class="navbar">
     <div class="navbar__container">
-        <a href="#home" id="navbar__logo">BLOODYMARRY MAKEUP</a>
+        <a href="./index.html" id="navbar__logo">BLOODYMARRY MAKEUP</a>
         <div class="navbar__toggle" id="mobile-screen">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -46,19 +52,19 @@
                 <button id="next-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></Button>
         </span>
         <div class="slides">
-            <img class="picture__container"  src="./src/assets/DALL·E 2024-12-06 12.47.24 - A collection of makeup items including lipstick, blush, eyeshadow palette, and makeup brushes arranged aesthetically. The colors are vibrant and varie.webp">
+            <img alt="picture of makeup items" class="picture__container"  src="./assets/M-photo1.webp">
             <div class="caption-container">
                 <p class="caption"> Her står det noe</p>
             </div>
         </div>
         <div class="slides">
-            <img class="picture__container"  src="./src/assets/DALL·E 2024-12-06 12.48.11 - A different collection of makeup items, including mascara, foundation, lip gloss, and compact powder arranged aesthetically. The colors are varied wit.webp">
+            <img alt="picture of makeup items" class="picture__container"  src="./assets/M-photo2.webp">
             <div class="caption-container">
                 <p class="caption"> Her står det noe</p>
             </div>
         </div>
         <div class="slides">
-            <img class="picture__container"  src="./src/assets/DALL·E 2024-12-06 12.48.13 - A third collection of makeup items including eyeliner, concealer, highlighter, and nail polish arranged aesthetically. The colors are varied with shad.webp">
+            <img alt="picture of makeup items" class="picture__container"  src="./assets/M-photo3.webp">
             <div class="caption-container"><p class="caption"> Her står det noe</p>
             </div>
         </div>
@@ -98,7 +104,6 @@
                 <!-- spørsmål1 -->
                 <div class="question__container"><h2>Question 1</h2>
                 <h3>Hvordan føles huden din etter at du har vasket den med vann og rens?</h3>
-                
 
                 <p><input type="radio" name="question1" value="1">Stram og tørr</p>
                 <p><input type="radio" name="question1" value="2">Litt tørr, men komfortabel </p>
@@ -131,7 +136,7 @@
            <button type="button" class="submit__questions-button">Sumbit Answere</button>
             </div>
               
-        </br>
+        <br/>
             <div class="ans hidden" id="ans1"><h2>Hudtype: Tørr Hud</h2><p><strong>Anbefaling:</strong></strongAnbefaling:> Huden din er sannsynligvis tørr. Det er viktig å bruke fuktighetsgivende produkter med ingredienser som hyaluronsyre og ceramider for å hjelpe med å opprettholde fuktigheten. Unngå sterke rensemidler og produkter som kan strippe huden for oljer.</p></div>
             <div class="ans hidden" id="ans2"><h2>Hudtype: Sensitiv eller Kombinert Hud</h2><p><strong>Anbefaling:</strong>Huden din kan være sensitiv eller kombinert. Bruk produkter uten sterke dufter eller irriterende ingredienser. Prøv en mild, parfymefri fuktighetskrem, og husk solkrem for beskyttelse.</p></div>
             <div class="ans hidden" id="ans3"><h2>Hudtype: Normal Hud</h2><p><strong>Anbefaling: Huden din er trolig normal. Den virker balansert, verken for tørr eller for fet. Fortsett med en god rutine som inkluderer rensing, fuktighet og solbeskyttelse. Bruk produkter som opprettholder fuktighetsbalansen.</strong></p></div>
@@ -153,25 +158,25 @@
             </ul>
         </div>
         <div class="image__container hidden">
-            <img src="./src/assets/8ac3dd9a-94e7-4ebf-8eab-7454d1315fb5.webp" class="tag__item">
+            <img src="./assets/Phototips.webp" class="tag__item">
         </div>
         <div class="text__content-container hidden">
             <h1>Find Your Perfect Makeup Match</h1>
             <p>Discover the power of makeup that complements your unique beauty. Whether you prefer a bold, dramatic look or a soft, natural finish, we have the tips and tools to help you shine. Explore our wide range of products and learn how to bring out the best in your features.
             </p>
-        </br>
+        <br/>
             <h1>Skincare Meets Style</h1>
             <p>Beautiful makeup starts with healthy skin. From hydrating moisturizers to gentle cleansers, learn how to create the perfect base for your makeup. Combine flawless skin with your favorite shades to express your personal style.
             </p>
-        </br>
+        <br/>
             <h1>Color Coordination Made Simple</h1>
             <p>Not sure which makeup shades match your outfit or mood? Our guide helps you pair bold lipsticks with elegant attire, natural tones with casual wear, and the perfect eyeshadow for every occasion. Let your makeup and wardrobe work in harmony.
             </p>
-        </br>
+        <br/>
             <h1>Elevate Your Beauty Routine</h1>
             <p>Step up your beauty game with expert tips on application techniques, seasonal trends, and product recommendations. Whether you’re experimenting with new looks or perfecting your signature style, we’ve got you covered.
             </p>
-        </br>
+        <br/>
         </div>
         <div class="video__totorials hidden"> 
             <div class="video-text">
@@ -180,7 +185,7 @@
             </div>
             <div class="video-item1">
                 <video width="800px" controls class="video1">
-                <source src="./src/assets/Effortless Everyday Makeup Tutorial!-VEED.mp4">
+                <source src="./assets/Effortless Everyday Makeup Tutorial!-VEED.mp4">
                 </video>
             </div>
             <div class="video-text">
@@ -189,7 +194,7 @@
             </div>
            <div class="video-item2">
             <video width="800px"  controls class="video2">
-                <source src="./src/assets/Perfect Your Skincare Routine for Every Skin Type!-VEED.mp4">
+                <source src="./assets/Perfect Your Skincare Routine for Every Skin Type!-VEED.mp4">
             </video>
         </div>
     </div>
